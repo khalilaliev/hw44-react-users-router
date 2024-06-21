@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../Button";
+import Button from "../Button/Button";
 
 const UserAlbumItem = ({ album }) => {
   if (!album || album.length === 0)
@@ -22,7 +22,7 @@ const UserAlbumItem = ({ album }) => {
                 nesciunt!
               </p>
               <div className="card-footer">
-                <Link to={`/users/${item.id}/albums`}>
+                <Link to={`/users/${item.userId}/albums/${item.id}/photos`}>
                   <Button text="Photos" />
                 </Link>
               </div>

@@ -21,12 +21,11 @@ const UserAlbums = () => {
     };
     getUserAlbumData();
   }, [userId]);
-  console.log(album);
   return (
     <>
       <div className="container">
-        <h1 className="text-center text-3xl my-8">Users album</h1>
-        <div className=" flex justify-center items-center gap-5 flex-wrap">
+        <h1 className="text-center text-3xl my-8">Users albums</h1>
+        <div className=" flex justify-center  gap-7 flex-wrap">
           <UserAlbumItem album={album} />
         </div>
       </div>

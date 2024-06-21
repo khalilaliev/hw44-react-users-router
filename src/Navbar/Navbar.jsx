@@ -2,7 +2,8 @@ import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Users from "../pages/User";
 import { IoLogoJavascript } from "react-icons/io";
-import UserAlbums from "../Button/UserAlbums/UserAlbums";
+import UserAlbums from "../UserAlbums/UserAlbums";
+import UserPhoto from "../UserPhotos/UserPhoto";
 
 const NAV_ITEM = [
   {
@@ -18,6 +19,10 @@ const NAV_ITEM = [
       {
         path: "/:userId/albums",
         element: <UserAlbums />,
+      },
+      {
+        path: "/:userId/albums/:albumId/photos",
+        element: <UserPhoto />,
       },
     ],
   },
