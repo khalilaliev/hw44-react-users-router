@@ -9,7 +9,7 @@ const UserPhotoItem = ({ photos }) => {
     <>
       {photos.map((item) => {
         return (
-          <div className="card card-image-cover" key={item.id}>
+          <div className="card  card-image-cover" key={item.id}>
             <div className="card-body">
               <h2 className="card-header">
                 {item.id}. {item.title}
@@ -18,11 +18,8 @@ const UserPhotoItem = ({ photos }) => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad,
                 quae!
               </p>
-              {/* <div className="card-footer">
-                <button className="btn-secondary btn">Learn More</button>
-              </div> */}
+              <img src={item.thumbnailUrl} alt="" />
             </div>
-            <img src={item.thumbnailUrl} alt="" />
           </div>
         );
       })}
