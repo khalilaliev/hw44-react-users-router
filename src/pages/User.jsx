@@ -1,11 +1,13 @@
-const Users = () => {
+import Users from "../Users/Users";
+
+const User = () => {
   return (
     <>
       <div>
-        <h1>Users</h1>
+        <Users />
       </div>
     </>
   );
 };
 
-export default Users;
+export default User;
